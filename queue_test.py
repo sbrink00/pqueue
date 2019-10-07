@@ -16,8 +16,11 @@ def getAryCommands(filename):
   for i in range(len(lines)): lines[i] = lines[i].replace("\n", "")
   return lines
 
-def executeCommands():
+def executeCommands(lines):
   pq = Pqueue(newCMP)
+  for line in lines:
+    ary = line.split(" ")
+    
 
 
 
